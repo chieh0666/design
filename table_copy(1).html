@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        table{
+            table-layout: auto;
+            width: 800px;
+            border: 5px green solid;
+            border-collapse: separate;
+            border-spacing: 0px; /*框與框的間隙*/
+        }
+        th,td{ /*所有儲存格*/
+            border-top: 5px gold solid;
+            border-right: 5px silver solid;
+            border-bottom: 5px brown solid;
+            border-left: 5px black solid;
+            line-height: 50px;
+            text-align: center;
+        }
+        tr td:nth-child(6){
+            white-space: nowrap; /*強制不換行*/
+        }
+        th:nth-child(1),th:nth-child(2),th:nth-child(3){
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>S_NO</th>
+                <th>NAME</th>
+                <th>SEX</th>
+                <th>TEL</th>
+                <th>BIRTHDAY</th>
+                <th>ADDRESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>81001</td>
+                <td>王立宏</td>
+                <td>Yes</td>
+                <td>(07)5521843</td>
+                <td>1981/3/5</td>
+                <td>高雄市中華一路93號</td>
+            </tr>
+            <tr>
+                <td>81002</td>
+                <td>張淑真</td>
+                <td>No</td>
+                <td>(07)6172843</td>
+                <td>1981/12/11</td>
+                <td>高雄縣梓官鄉同安路112號</td>
+            </tr>
+            <tr>
+                <td>81003</td>
+                <td>高大樹</td>
+                <td>Yes</td>
+                <td>(08)5668752</td>
+                <td>1980/2/22</td>
+                <td>屏東縣新園鄉中正路132巷50號</td>
+            </tr>
+            <tr>
+                <td>81004</td>
+                <td>李坤樹</td>
+                <td>Yes</td>
+                <td>(07)3845532</td>
+                <td>1981/6/20</td>
+                <td>高雄市建工路345巷5弄10號</td>
+            </tr>
+            <tr>
+                <td>81005</td>
+                <td>張英蓉</td>
+                <td>No</td>
+                <td>(07)3326789</td>
+                <td>1981/2/8</td>
+                <td>高雄市中山一路542號</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+
+    <div id="table">
+        <div class="tr">
+            <div class="th">圖片</div>
+            <div class="th">日期</div>
+            <div class="th">說明</div>
+        </div>
+        <div class="tr">
+            <div class="td"><img src="/img/portfolio-img10.jpg" alt=""></div>
+            <div class="td">2011-10-30</div>
+            <div class="td">台灣總代理公司貨，一年保固
+                商品七日內非人為因素，新品不良可退換貨
+                商品規格與內容以官方當時銷售為主，如有變動不另行通知</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      .table {
+        display: table;
+      }
+      .th {
+        display: table-header-group;
+      }
+      .tf {
+        display: table-footer-group;
+      }
+      .td {
+        display: table-cell;
+        border: gold 3px solid;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .tr {
+        display: table-row;
+      }
+      .td:nth-of-type(odd){ /*odd:單數 even:雙數*/
+        background-color: goldenrod;
+      }
+      .tr:nth-of-type(2n+1){ /*2n+1:單數 2n:雙數*/
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="table">
+      <div class="th">
+        <div class="tr">
+          <div class="td">S_NO</div>
+          <div class="td">NAME</div>
+          <div class="td">SEX</div>
+          <div class="td">TEL</div>
+          <div class="td">BIRdivDAY</div>
+          <div class="td">ADDRESS</div>
+        </div>
+      </div>
+      <div class="tr">
+        <div class="td">81001</div>
+        <div class="td">王立宏</div>
+        <div class="td">Yes</div>
+        <div class="td">(07)5521843</div>
+        <div class="td">1981/3/5</div>
+        <div class="td">高雄市中華一路93號</div>
+      </div>
+      <div class="tr">
+        <div class="td">81002</div>
+        <div class="td">張淑真</div>
+        <div class="td">No</div>
+        <div class="td">(07)6172843</div>
+        <div class="td">1981/12/11</div>
+        <div class="td">高雄縣梓官鄉同安路112號</div>
+      </div>
+      <div class="tr">
+        <div class="td">81003</div>
+        <div class="td">高大樹</div>
+        <div class="td">Yes</div>
+        <div class="td">(08)5668752</div>
+        <div class="td">1980/2/22</div>
+        <div class="td">屏東縣新園鄉中正路132巷50號</div>
+      </div>
+      <div class="tr">
+        <div class="td">81004</div>
+        <div class="td">李坤樹</div>
+        <div class="td">Yes</div>
+        <div class="td">(07)3845532</div>
+        <div class="td">1981/6/20</div>
+        <div class="td">高雄市建工路345巷5弄10號</div>
+      </div>
+      <div class="tr">
+        <div class="td">81005</div>
+        <div class="td">張英蓉</div>
+        <div class="td">No</div>
+        <div class="td">(07)3326789</div>
+        <div class="td">1981/2/8</div>
+        <div class="td">高雄市中山一路542號</div>
+      </div>
+    </div>
+    
+    <!-- <div id="table">
+      <div class="tr">
+        <div class="th">圖片</div>
+        <div class="th">日期</div>
+        <div class="th">說明</div>
+      </div>
+      <div class="tr">
+        <div class="td"><img src="/img/portfolio-img10.jpg" alt="" /></div>
+        <div class="td">2011-10-30</div>
+        <div class="td">
+          台灣總代理公司貨，一年保固 商品七日內非人為因素，新品不良可退換貨
+          商品規格與內容以官方當時銷售為主，如有變動不另行通知
+        </div>
+      </div>
+    </div> -->
+  </body>
+</html>

@@ -1,0 +1,194 @@
+@font-face {
+    font-family: YuChieh; /*宣告字體名稱*/
+    src:url(../font/arialbd.ttf);
+}
+body {
+    background: linear-gradient(
+        30deg,
+        black 20%,
+        lightpink 40%,
+        white 60%,
+        darksalmon 80%,
+        black 100%
+    );
+    margin-top: 0px; /*外距頂端距離*/
+    margin-left: 0px; /*外距左側距離*/
+}
+#banner {
+    background-image: url(../img/about-header.jpg);
+    background-position: center center; /*設定背景圖片位置*/
+    background-repeat: no-repeat; /*設定背景圖片重複顯示*/
+    background-size: cover; /*設定背景圖片呈現方式*/
+    width: 800px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto; /*外距右側距離*/
+    position: relative; /*設定定位方式 relative(相對位置)*/
+    top: 29px;
+    left: 0px;
+}
+#logo_text {
+    color: black;
+    opacity: 80%;
+    font-size: 40px;
+    text-transform: uppercase; /*轉換文字*/
+    margin-top: 100px;
+    margin-right: 25px;
+    float: right;
+    text-shadow: 2px 2px 1px white,4px 4px 1px lightpink,6px 6px 1px darksalmon;
+}
+nav {
+    width: 483.9px;
+    height: 28px;
+    border-left: solid #000 5px; /*左外框*/
+    border-right: solid #000 5px; /*右外框*/
+    padding-left: 1px; /*左內距*/
+    padding-right: 1px; /*右內距*/
+    position: fixed; /*設定定位方式 absolute(絕對位置) fixed(固定)*/
+    top: 0px;
+    left: 0px;
+    z-index: 0; /*控制堆疊順序*/
+}
+nav a {
+    color: black; /*設定前景色*/
+    font-size: 25px;
+    text-decoration: none; /*文字裝飾*/
+    font-family: 'YuChieh'; /*設定字體*/
+    transition: 1s ease;
+    -webkit-transition: 0.5s ease 0.1s; /*動畫時間 ease(動作狀態) 延遲時間*/
+    -moz-transition: 0.5s ease 0.1s;
+    -ms-transition: 0.5s ease 0.1s;
+    -o-transition: 0.5s ease 0.1s;
+}
+nav a:hover { /*滑鼠滑上去改變效果*/
+    color: lightpink;
+    background-color: black;
+    text-decoration: none;
+}
+#service {
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ser_item {
+    width: 234px;
+    background-color: lightgrey;
+    float: left; /*浮動*/
+    margin-top: 10px;
+    background: radial-gradient(closest-corner circle, darksalmon 50%, lightgrey 100%);
+}
+.ser_item h1 {
+    font-size: 25px;
+    background-color: darksalmon;
+    text-align: center;
+    line-height: 30px;
+    margin-top: -4px;
+}
+.ser_item p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-indent: 2em; /*行首縮排 (em是半形字佔格單位), 可以有負(-)值*/
+    text-align: justify;
+    padding: 0px 15px;
+    margin-top: -5px;
+}
+.ser_item p a {
+    color: darkred;
+    text-decoration: none;
+    border: darkred 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.ser_item p a:hover {
+    border: darkred 1px dotted;
+}
+.ser_item p a:active {
+    background-color: darkred;
+    color: white;
+}
+.ser_item p a:visited {
+    color: darkgray;
+}
+.ser_item img {
+    width:228px;
+    height:auto;
+    border-color: rgb(192, 192, 192);
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 0px 0px 5px 3px lightpink,0px 0px 10px 3px black;
+}
+.ser_item:nth-child(2) { /*標籤下子元素選取器(依順序)*/
+    margin-left: 50px;
+}
+.ser_item:nth-child(3) {
+    margin-left: 50px;
+}
+#context {
+    background-color: lightpink;
+    clear: both; /*清除被文繞圖影響的物件*/
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    text-align: justify;
+    font-size: 30px;
+    column-count: 3;
+    column-gap: 15px;
+    column-rule-width: 1px;
+    column-rule-color: black;
+    column-rule-style: solid;
+    opacity: 0.8;
+    background: -webkit-gradient(linear, left top, right top, from(darksalmon), to(darksalmon), color-stop(50%, lightgrey));
+}
+i.fas {
+    font-size: 50px;
+    color: white;
+    display: block;
+    float: left;
+    margin: 5px;
+}
+#context img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+}
+#context p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 18px;
+}
+#context p:first-line{
+    color: darkviolet;
+}
+#context h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 30px;
+    column-span: all;
+    background-color: darksalmon;
+    counter-increment: h1_counter 1;
+}
+#context h1::before{
+    
+    content: /*url(../img/bell.png),*/counter(h1_counter, upper-alpha)". ";
+}
+#context h1+p:first-letter{
+    color: darkviolet;
+    font-size: 50px;
+    float:left;
+    display: inline-block;
+    margin: 10px;
+}
+#context h1~h1{
+    background-color: transparent;
+    column-span: none;
+}
+#context h1:nth-of-type(3){
+    break-before: column;
+    counter-reset: h1_counter 0;
+}
+#context h1:nth-of-type(4){
+    break-before: column;
+}
